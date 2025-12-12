@@ -37,3 +37,32 @@ body {
   transform: scale(1.05);
   background: #fff;
 }
+
+.basicLightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+
+}
+.basicLightbox--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.basicLightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  object-fit: contain;
+  
+}
+
+
